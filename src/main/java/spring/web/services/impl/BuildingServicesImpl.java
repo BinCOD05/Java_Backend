@@ -26,7 +26,9 @@ public class BuildingServicesImpl implements BuildingService {
 	
 	
 	@Autowired
-	private BuildingSearchConverter buildingSearchConverter ; 
+	private BuildingSearchConverter buildingSearchConverter ;
+	
+	
 	@Override
 	public List<BuildingDTO> findAll(Map<String , Object> params , List <String> typeCode) {
 		// TODO Auto-generated method stub
@@ -41,6 +43,9 @@ public class BuildingServicesImpl implements BuildingService {
 			BuildingDTO buildingDTO = buildingDTOConvertor.toBuildingConvertor(it) ; 
 			result.add(buildingDTO); 
 		}
+		
+		
+		
 		return result;
 	}
 	

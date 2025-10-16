@@ -21,8 +21,7 @@ public class BuildingDTOConvertor {
 		
 		buildingDTO.setName(data.getName());
 		buildingDTO.setInfo(data.getStreet() + " " + data.getWard());
-		
-		
+	
 		return buildingDTO ; 
 	}
 }	
