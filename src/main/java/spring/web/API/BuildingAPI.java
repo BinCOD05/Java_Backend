@@ -25,4 +25,6 @@ public class BuildingAPI {
 		return buildingSevice.findAll(params, typeCode);
 	}
 	
+	
+
 }

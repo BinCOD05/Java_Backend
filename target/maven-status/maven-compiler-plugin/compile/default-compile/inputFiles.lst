@@ -11,7 +11,9 @@ E:\Project\spring\src\main\java\spring\web\model\ErrorResponseDTO.java
 E:\Project\spring\src\main\java\spring\web\Partern\BuilderSearchParttern.java
 E:\Project\spring\src\main\java\spring\web\Repository\BuildingRepository.java
 E:\Project\spring\src\main\java\spring\web\Repository\Entity\BuildingEntity.java
-E:\Project\spring\src\main\java\spring\web\Repository\impl\BuildingRepositoryImpl.java
+E:\Project\spring\src\main\java\spring\web\Repository\Entity\DistrictEntity.java
+E:\Project\spring\src\main\java\spring\web\Repository\impl\BuildingRepositotyImpl.java
+E:\Project\spring\src\main\java\spring\web\Repository\impl\jdbcBuildingRepositoryImpl.java
 E:\Project\spring\src\main\java\spring\web\services\BuildingService.java
 E:\Project\spring\src\main\java\spring\web\services\impl\BuildingServicesImpl.java
 E:\Project\spring\src\main\java\spring\web\Utils\ConnectionDB.java

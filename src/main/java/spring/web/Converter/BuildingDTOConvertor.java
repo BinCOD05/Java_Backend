@@ -17,11 +17,9 @@ public class BuildingDTOConvertor {
 	ModelMapper modelMapper ; 
 	
 	public BuildingDTO toBuildingConvertor(BuildingEntity data) {
-		BuildingDTO buildingDTO  =  modelMapper.map(data, BuildingDTO.class); 
-		
-		buildingDTO.setName(data.getName());
+		BuildingDTO buildingDTO  =  modelMapper.map(data, BuildingDTO.class); 	
+		buildingDTO.setName(data.getName() );
 		buildingDTO.setInfo(data.getStreet() + " " + data.getWard());
-	
 		return buildingDTO ; 
 	}
 }	

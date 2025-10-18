@@ -32,25 +32,25 @@ public class BuildingEntity {
 	private DistrictEntity district;
 	
 	
-	@Column(name = "numberOfBasement")
+	@Column(name = "numberofbasement")
 	private Long numberOfBasement ; 
 	
-	@Column(name = "floorArea")
+	@Column(name = "floorarea")
 	private Long floorArea ;
 	
-	@Column(name = "rentPrice")
+	@Column(name = "rentprice")
 	private Long rentPrice ; 
 	
-	@Column(name = "managerName")
+	@Column(name = "managername")
 	private String managerName ;
 	
-	@Column(name = "managerPhoneNumber")
+	@Column(name = "managerphonenumber")
 	private String managerPhoneNumber ; 
 	
-	@Column(name = "serviceFee")
+	@Column(name = "servicefee")
 	private Long serviceFee ;
 	
-	@Column(name = "brokerageFee")
+	@Column(name = "brokeragefee")
 	private Long brokerageFee ;
 
 	public Long getId() {
