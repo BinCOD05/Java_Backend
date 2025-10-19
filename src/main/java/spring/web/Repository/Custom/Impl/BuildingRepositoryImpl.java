@@ -1,4 +1,4 @@
-package spring.web.Repository.impl;
+package spring.web.Repository.Custom.Impl;
 
 import java.sql.Statement;
 
@@ -22,13 +22,14 @@ import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.Query;
 import spring.web.Partern.BuilderSearchParttern;
 import spring.web.Repository.BuildingRepository;
+import spring.web.Repository.Custom.BuildingRepositoryCustom;
 import spring.web.Repository.Entity.BuildingEntity;
 import spring.web.Utils.*;
 
 
 @Repository
 @Primary
-public class jdbcBuildingRepositoryImpl implements BuildingRepository {
+public class BuildingRepositoryImpl implements BuildingRepositoryCustom {
 	
 	@PersistenceContext
 	private EntityManager entityManager ; 

@@ -34,8 +34,6 @@ public class BuildingServicesImpl implements BuildingService {
 		// TODO Auto-generated method stub
 		
 		BuilderSearchParttern builderSearchParttern = buildingSearchConverter.toBuilderSearchParttern(params, typeCode);
-
-//		System.out.println(builderSearchParttern.getTypeCode().toString());
 		List<BuildingEntity> list = buildingRepository.findAll(builderSearchParttern);
 		List<BuildingDTO> result = new ArrayList<BuildingDTO>() ; 
 		for( BuildingEntity it : list) {
@@ -44,5 +42,16 @@ public class BuildingServicesImpl implements BuildingService {
 		}
 		return result;
 	}
+
+
+	@Override
+	public BuildingDTO findById(Long id) {
+		BuildingEntity building = buildingRepository.findById(id).get() ;
+		
+		
+		return buildingDTOConvertor.toBuildingConvertor(building) ; 
+	}
+	
+	
 	
 }
